@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .audio *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .left p{
+            font-size: 0.9rem;
+            color: rgba(56, 51, 51, 0.91);
+        }
+        .audio{
+            width: 80%;
+            padding: 10px;
+            background-color: rgba(137, 131, 131, 0.836);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 20px;
+
+        }
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+        }
+        .right button{
+            padding:10px 20px;
+            border-radius: 100px;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+        .right button:hover{
+            border:1px solid #000;
+
+        }
+        .right button a{
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>media tags</h1>
+    </center>
+    <hr>
+    <h1>displaying audio in websites using audio tag</h1>
+    <h1>example1</h1>
+    <audio src="./assets/media/elemental-magic-spell-impact-outgoing-228342.mp3" controls muted autoplay loop></audio>
+
+    <h1>example2</h1>
+    <audio controls muted autoplay loop>
+   
+        <source src="./assets/media/elemental-magic-spell-impact-outgoing-228342.mp3">
+    </audio>
+
+    <h2>example3</h2>
+    <div class="audio">
+        <div class="left">
+            <audio src="./assets/media/elemental-magic-spell-impact-outgoing-228342.mp3" controls></audio>
+            <img src="" alt="">
+            <div>
+                <h4>radiant surge</h4>
+                <p>top-flow</p>
+            </div>
+        </div>
+        <div class="right">
+            <button><a href="" download="./assets/media/elemental-magic-spell-impact-outgoing-228342">download</a></button>
+        </div>
+    </div>
+    <hr><hr><br><br>
+    <iframe src="./assets/media/elemental-magic-spell-impact-outgoing-228342.mp3" frameborder="0"></iframe>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgb(106, 104, 101);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            color: rgb(158, 134, 104);
+            font-size: 50px;
+            margin-top: 70px;
+        }
+        button{
+            border: none;
+            outline: none;
+            padding: 10px;
+            margin: 20px;
+            font-size: 25px;
+            color: rgba(255, 250, 250, 0.96);
+        }
+        p{
+            font-size: 20px;
+        }
+       
+        dialog{
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background-color: #ffffff63;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            padding: 4%;
+        }
+        dialog form{
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            margin: auto;
+        }
+        dialog form input{
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 8px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: aliceblue;
+        }
+
+        dialog form button[type="submit"],[type="reset"]{
+            width: 30%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(161, 125, 147);
+            color: #fff;
+            box-shadow: 3px 3px 0px #0c0c0c;
+            cursor: pointer;
+        }
+        dialog form button[type="submit"]:active{
+            box-shadow: none;
+            transform: translateY(3px);
+        }
+        dialog form button[type="reset"]:active{
+            box-shadow: none;
+            transform: translateY(3px);
+        }
+        .b2{
+            display: flex;
+            gap: 2px;
+            align-items: end;
+            justify-content:end;
+            background-color: #fff;
+        }
+       .b1:hover{
+            background-color: blanchedalmond;
+            color: #000;
+            border:1px solid #000;
+            border-radius: 50px;
+        }
+        
+        .close{
+            transition-delay: 10s;
+            width: 30px;
+            height: 30px;
+            transform: translateX(-10px);
+        }
+        label{
+            background-color: rgb(255, 255, 255);
+            color: darkblue;
+        }
+        .m2{
+
+           width: 400px;
+           height: 300px;
+           background-color: #fff;
+           color:#000;
+           border : 1px solid #000;
+           position: fixed;
+           top: 0px;
+           left: 0px;
+           padding: 27px;
+           border-radius: 20px;
+           margin:80px;
+           margin-left: 400px;
+
+        }
+        .close1{
+            transition-delay: 10s;
+        }
+        .m2 img{
+            
+            width: 50px;
+            padding:15px;
+            color: rgb(61, 210, 61);
+            background-color: #fff;
+            border:2px solid #fff;
+            box-sizing:border-box;
+            
+        }
+        .close2{
+            transition-delay: 10s;
+        }
+        .m3{
+
+width: 30%;
+height: 40%;
+background-color: #fff;
+color:#000;
+border : 1px solid #000;
+position: fixed;
+top: 0px;
+left: 0px;
+margin-left:400px;
+margin-top: 30px;
+align-items: center;
+padding: 30px;
+border-radius: 20px;
+
+
+}
+section .m2{
+    margin: 40px;
+
+}
+section .m3{
+    margin-top:40px ;
+}
+.container {
+            position: relative;
+            border: 2px solid #fff;
+            height: 0;
+            width:0px;
+            margin: 50px auto;
+            background-color: #fff;
+            object-fit: cover;
+        }
+        .checkmark {
+            position: absolute;
+            top: 0px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-250%);
+            transform: translateY(-495%);
+            font-size: 30px; /* Adjust as needed */
+            border: 2px solid rgb(53, 215, 53);
+            border-radius: 100%;
+            padding-inline: 20px 20px;
+            
+
+        }
+        .container1 {
+            position: relative;
+            border: 2px solid #fff;
+            height: 0;
+            width:0px;
+            margin: 50px auto;
+            background-color: #fff;
+            object-fit: cover;
+        }
+        .crossmark {
+            position: absolute;
+            top: 0px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-250%);
+            transform: translateY(-495%);
+            font-size: 30px; /* Adjust as needed */
+            border: 2px solid rgb(228, 21, 21);
+            border-radius: 100%;
+            padding-inline: 20px 20px;
+            background-color: #f51c1c;
+            align-items: center;
+
+        }
+        .f1{
+            background-color: rgba(202, 179, 75, 0.834);
+            filter: blur(100px);
+            width: 200px;
+            height:200px;
+            border-radius: 100px;
+            margin: auto;
+
+        }
+        .f2{
+            background-color: rgba(202, 179, 75, 0.834);
+            filter: blur(100px);
+            width: 200px;
+            height:200px;
+            border-radius: 100px;
+            margin-top: auto;
+        }
+        .f3{
+            position: absolute ;
+            transform:translateX(650%);
+            background-color: rgba(202, 179, 75, 0.834);
+            filter: blur(100px);
+            width: 200px;
+            height:200px;
+            border-radius: 100px;
+            margin-top: auto;
+
+            
+        }
+        
+
+
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="f2"></div>
+    <center><h1>POPUPS</h1>
+        <br/><br/>
+        <p>A website pop-up, also known as a lightbox pop-up, is an interactive message that appears over <br/> a webpage's content. They are designed to capture the user's attention, <br/>providing a compelling and immediate call to action.</p>
+        <div class="f1">
+        </div>
+</center>
+
+<button class="b1" onclick="showDialog()">contact us </button>
+
+<dialog id="pop">
+    <form>
+        <div style="display: flex; justify-content: space-between; align-items: center;background-color: rgb(255, 255, 255);">
+        <h3 style=" background-color: rgb(255, 255, 255);color: #000dff8d;">REGISTER</h3>
+        <button style=" background-color: rgb(255, 255, 255);color: #000;" type="button" class="close" onclick="hideDialog()"  >&#10539;</button>
+        </div>
+        
+   
+    <label for="username">username</label>
+    <input type="text" placeholder="enter your name" name="username" id="username"  required >
+
+
+    <label for="email">Email address</label>
+    <input type="email" placeholder="example@gmail.com" name="email" id="email"  required>
+
+    <label for="password">password</label>
+    <input type="password" placeholder="enter password" name="password" id="password"  required>
+
+
+    <div class="b2">
+        <button type="submit" onclick="showDialog1()">Submit</button>
+        <button type="reset" onclick="showDialog2()">cancle</button>
+    </div>
+    </form>
+
+</dialog>
+<dialog id="pop1">
+    <section class="m2">
+    
+        <button type="button" class="close1" onclick="hideDialog1()" style="background-color: #fff;color: #000;">&#10539;</button>
+    <div class="container">
+        <div style="background-color: #03ff29;" class="checkmark">&#10003;</div></div>
+    <h2 style=" background-color: rgb(255, 255, 255);color: rgb(50, 191, 50);">Successfully registered</h2>
+    <p style=" background-color: rgb(255, 255, 255);">Your register form is submitted completely and registered Successfully.</p>
+
+</section>
+
+</dialog>
+
+<dialog id="pop2">
+    <section class="m3">
+        <div style="background-color: #fff;">
+            <button style=" background-color: rgb(255, 255, 255);color: #000;" type="button" class="close2" onclick="hideDialog2()">&#10539;</button> 
+        <div class="container1">
+            <div class="crossmark">&#9747;</div>
+        </div>
+        </div>
+    
+    <h2 style=" background-color: rgb(255, 255, 255);color: rgb(255, 0, 0);">Failed to register</h2>
+    <p style=" background-color: rgb(255, 255, 255);">Your register form is failed to register.</p>
+</section>
+</dialog>
+
+
+<script>
+    let pop = document.getElementById('pop');
+
+  function showDialog(){
+    pop.show()
+  }
+ function hideDialog(){
+    pop.close()
+ }
+
+
+ let pop1=document.getElementById('pop1');
+
+function showDialog1(){
+   pop1.show()
+}
+function hideDialog1(){
+   pop1.close()
+}
+
+let pop2=document.getElementById('pop2');
+
+function showDialog2(){
+   pop2.show()
+}
+function hideDialog2(){
+   pop2.close()
+}
+
+ 
+</script>
+<div class="f3"></div>
+
+
+
+</body>
+</html>

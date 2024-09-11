@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        progress{
+            accent-color: blue;
+            width: 300px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>default progress bar</h1>
+   <progress></progress>
+
+   <h1>static progress bar</h1>
+  <progress value="30" min="0" max="100"></progress>
+
+  <h1>dynamic progress bar</h1>
+  <progress value="0" min="0" max="100" id="p1"></progress>
+
+  <script>
+    const progresstag = document.getElementById('p1');
+    const result=document.getElementById('result')
+
+    function downloadhandler(){
+        result.innerText='download'+progresstag.value+'%'
+        if(progresstag.value==100){
+            result.innerHTML="<span style='color:green'>done</span>"
+            return;
+        
+        }else{
+            progresstag.value++
+        }
+    }
+    setinterval('downloadHandler()',100)//1000ms=1s
+  </script>
+
+</body>
+</html>

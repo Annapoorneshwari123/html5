@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        dialog{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            background-color: #807272d0;
+            outline: none;
+            border: none;
+
+            
+        }
+        .card{
+            width: 280px;
+            min-height: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: auto;
+            box-shadow: 0px 0px 2px gray;
+            margin-top: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .top{
+            height: 130px;
+            background-color: yellow;
+        }
+        .image{
+            width: 80px;
+            height: 80px;
+            box-shadow: 0px 0px 3px #ccc;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            transform: translateY(-40px);
+            background-color: #fff;
+
+        }
+        .image .img{
+            width: 50px;
+        }
+        .text{
+            text-align: center;
+            padding: 10px;
+            padding-bottom: 30px;
+
+        }
+        .text p{
+            color: gray;
+
+        }
+        .text .dark-btn{
+            border: none;
+            padding: 8px;
+            background-color: blue;
+            color: #fff;
+            border-radius: 100px;
+            outline: none;
+            margin-top: 20px;
+            width: 80px;
+        }
+        .text .light-btn{
+            border: none;
+            outline: none;
+            width: 80px;
+            background-color: transparent;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+
+        }
+        .test{
+            font-size: 1.2rem;
+            line-height: 2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showpopup1()">popup1</button>
+    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat cupiditate necessitatibus dolores officia facere deleniti, blanditiis nihil fuga, unde obcaecati quibusdam ex officiis voluptates ipsum saepe esse perspiciatis veritatis vel!
+    Ratione modi provident consectetur, ipsam, sint obcaecati vero explicabo vitae aspernatur amet impedit optio. Aperiam obcaecati porro ex hic optio illum non, fugiat tempora est, ea aspernatur reiciendis voluptates tenetur.
+    Nemo dolorem officia assumenda nesciunt optio provident perspiciatis ea rem iste cum eum aspernatur dignissimos qui molestias, quia modi rerum sit velit error aut blanditiis? Natus magni numquam eum nisi.
+    Ratione, dicta repellat non nesciunt eaque vitae maiores quaerat, reprehenderit natus sed quasi eligendi, magni et. Sed ipsam nisi distinctio obcaecati. Quasi mollitia consectetur quis quod quisquam ab, asperiores saepe.
+    Illum accusamus natus quod minus possimus? Architecto necessitatibus sit ea vel maiores, distinctio hic cum ab dolorum earum ad. Iure neque in saepe earum iusto modi, vel porro accusamus quidem?
+    Fugit, nulla pariatur! Excepturi vitae sunt quam blanditiis hic, nostrum voluptatibus amet autem voluptate necessitatibus quaerat esse vero. Ad aliquid molestias ea molestiae maiores facere, illo praesentium ipsa a ut.
+    Sint, adipisci vitae suscipit officiis modi molestiae, dolor voluptate alias aliquam natus, facilis praesentium repellendus perferendis nulla minus voluptatibus ex eos esse magni eaque fugit est. Sed dolorem rerum amet?
+    Laboriosam laborum quod assumenda quibusdam repellat, rem reprehenderit incidunt eum at officia vitae ipsam maxime nihil soluta error atque asperiores cupiditate blanditiis deserunt sint numquam deleniti exercitationem aspernatur laudantium! Excepturi!
+    Vitae dolore ut atque placeat quibusdam, cumque nam nostrum expedita fuga quia eligendi possimus labore dolorem velit reiciendis aut earum ratione dolorum culpa alias quae blanditiis. Nemo impedit nobis animi.
+    Sint illo reprehenderit tenetur aliquam odio corporis sed laudantium delectus asperiores vitae rem incidunt quas earum, amet deserunt impedit magnam veniam, deleniti itaque dolorem ratione praesentium voluptatum laboriosam facere. Consectetur?
+    Eos iure consectetur voluptatum sunt! Commodi nam dolorum quos. Quis accusantium aspernatur pariatur ad atque hic voluptate molestias dicta dolorem at, soluta similique quaerat commodi, unde vitae quod debitis eveniet.
+    Autem veniam illum ullam necessitatibus corrupti quae exercitationem. Saepe incidunt dolore omnis minus accusantium fugit iste quo laboriosam sit deserunt atque rerum molestiae ab, aliquam a ut, cum quis. Quam.
+    Ex rerum nisi nam harum aliquid rem expedita quasi recusandae necessitatibus mollitia ipsam quam atque voluptates possimus aut soluta exercitationem at provident, nulla ullam! Suscipit asperiores incidunt ipsa voluptas error.</p>
+    <dialog id="popup1" onclick="closepopup1()">
+        <div class="card">
+            <div class="top">
+            </div>
+            <div class="image">
+                <img src="https://www.freepik.com/icon/tshirt_12018708#fromView=search&page=1&position=37&uuid=39b16952-9b59-4a8c-8af9-9b7133d63d8d" alt="loding...">
+            </div>
+            <div class="text">
+                <h3>Congrats julia!!!</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, sapiente!</p>
+                <button class="dark-btn">Share</button>
+                <button class="light-btn">Skip</button>
+            </div>
+        </div>
+    </dialog>
+    <script>
+        let popup1=document.getElementById('popup1');
+
+        function showpopup1(){
+            popup1.show();
+        }
+        function closepopup1(){
+            popup1.close();
+        }
+
+    </script>
+</body>
+</html>
