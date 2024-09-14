@@ -10,8 +10,10 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #e60e0e;
+            background-color: #0c0c0c;
+            color: white;
         }
+       
         #header{
             display: flex;
             align-items: center;
@@ -109,10 +111,12 @@
         }
         .b1{
             flex:1;
+            gap:30px;
         }
        .b2{
         flex:1;
        }
+       
        .image{
         display: flex;
         align-items: center;
@@ -152,8 +156,64 @@
        #article h2{
         color:#caf31e;
        }
-      
+       .image .img1 button{
+        padding: 80px 130px;
+        border-radius:30px ;
+       }
+       .award{
+           display:flex;
+           align-items: start;
+           justify-content: space-between; 
+           margin-top: 140vh; 
+           
+       }
+       .batch1{
+        margin: 60px;
+        font-size: 1.5rem;
+       }
+       .batch{
+          margin: 80px;
+          margin-top: 50px;
+       }
+       .batch .right h1{
+            font-size:3rem;
+       }
+       #footer{
+            padding: 3%;
+            min-height: 70vh;
+            background-color: #0c0c0c;
+            color: #fff;
+            display: flex;
+            gap: 10px;
+        }
+        #footer .subtile{
+            font-size: 1.5rem;
+            margin-top: 8px;
+            flex:2;
+           
+        }
+        #footer ul{
+            list-style-type: none;
+            padding: 0px;
+        }
+        #footer ul li{
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+        #footer ul li a{
+            text-decoration: none;
+            color: #ccc;
+        }
        
+        .footer-card{
+            flex: 2;
+        }
+        .footer-card:nth-child(1){
+            flex: 2;
+        }
+        .footer-card:nth-child(4){
+            flex: 2;
+        }
     </style>
 </head>
 <body>
@@ -202,14 +262,11 @@
           <h1>Featured Work</h1>
           <div class="image">
             <div class="img1">
-                <img src="https://cdn.prod.website-files.com/66c8e5bad271356afaf4146f/66c8e88c4d4085d828745761_Creative%20Design-p-800.jpg" alt="wait.." width="500" height="500"><br><br>
+                <img src="https://cdn.prod.website-files.com/66c8e5bad271356afaf4146f/66c8e88c4d4085d828745761_Creative%20Design-p-800.jpg" alt="wait.." width="500" height="500">
 
-                <button class="main-btn">MOCKUPS <br>
-                    Graphic Design Solutions 
-                </button>
-                
-
-
+                <h2>MOCKUPS</h2> 
+                <h1>Graphic Design Solutions </h1>
+        
             </div>
             <div class="img2">
                 <img src="https://cdn.prod.website-files.com/66c8e5bad271356afaf4146f/66c8e885136f7613204f074b_Illustration%20Art.jpg" alt="wait.." width="500" height="500"><br><br>
@@ -231,9 +288,68 @@
                 <h1>Branding & Mockups</h1>
 
             </div>
-          </div>
-
+        </div>
     </div>
+    <div class="award">
+        <div class="batch1">
+            <h1>Our Works</h1>
+        </div>
+        <div class="batch">
+           <section class="right">
+            <div class="t1">
+                <h1>Webflow Award</h1>
+                <h5>2024</h5><br><br>
+            </div>
+            <div class="t1">
+                <h1>Mockup Mastery</h1>
+                <h5>2023</h5><br><br>
+            </div>
+            <div class="t1">
+                <h1>Design Excellence</h1>
+                <h5>2022</h5><br><br>
+            </div>
+           </section>
+        </div>
+    </div>
+    <hr>
+
+    <div id="footer">
+        <div class="footer-card">
+                <img src="https://cdn.prod.website-files.com/66c79cdaff2cc66972a7a7bc/66cb1c8f1472f15e9aa59cc0_RIMI..svg" alt="loading" width="100">
+                <p class="subtile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            </div>
+            <div class="footer-card">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Works Category</a></li>
+                </ul>
+            </div>
+            <div class="footer-card">
+                <ul>
+                    <li><a href="#">Style Guide</a></li>
+                    <li><a href="#">Changelog</a></li>
+                    <li><a href="#">Licence</a></li>
+                    <li><a href="#">Password</a></li>
+                    <li><a href="#">404</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-card">
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">X(Twitter)</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Dribbble</a></li>
+                </ul>
+            </div>
+    </div><hr>
+  
+ 
+    
 
 </body>
 </html>

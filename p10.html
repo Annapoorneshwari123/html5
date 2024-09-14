@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        article{
+            display: flex;
+            gap:30px;
+            padding: 5%;
+        }
+        .left{
+            flex:1;
+            line-height: 1.4;
+            padding-top: 100px;
+        }
+        .right{
+            flex:1;
+
+        }
+        .left .content{
+            font-size: 1.5rem;
+            margin-top: 30px;
+            line-height: 2;
+        }
+        .heading{
+            margin-top: 20px;
+            font-size: 2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>semantic elements</h1>
+        <p><b>in any language,it is essential to undersatand the meaning of words during communication.</b></p>
+
+
+        <h2>why to use sematic elements?</h2>
+        <p>in html5,developers have to use their own id/class names to style elem:
+            header,footer,navigation,main,container,content,article,sidebar,top,bottom,menuetc.
+        </p>
+    </center>
+    <hr>
+
+    <center>
+        <h1>article tag</h1>
+        <p>this tag defines an independent self-contained content in a doc,page,application or a site.</p>
+    </center>
+
+    <article>
+        <div class="left">
+              <h1>About us</h1>
+              <h1 class="heading">we dwelling elegance do shutters <br>appetite yourself diverted.</h1>
+              <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex numquam quo rem ea dolores totam aliquid qui facilis nihil, aperiam soluta maiores reiciendis laboriosam quam saepe rerum itaque repellendus dolorum.
+              Tempora fugiat consequuntur quis corrupti debitis dolores enim harum eligendi placeat reiciendis velit maiores, dolor ullam nostrum optio qui consequatur natus eveniet sit pariatur animi. Hic tempore odit vero 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam temporibus fugiat? Numquam cumque totam qui deleniti voluptatibus nisi ea aspernatur dolorem assumenda suscipit at officiis, eum excepturi earum fugiat.</p>
+        </div>
+        <div class="right">
+            <img src="https://assets.nicepagecdn.com/11a8ddce/1522145/images/pexels-photo-3735354.jpeg" alt="loading.." width="100%" height="100%">
+        </div>
+    </article>
+</body>
+</html>

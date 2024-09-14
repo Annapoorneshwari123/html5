@@ -21,10 +21,12 @@
 
   <h1>dynamic progress bar</h1>
   <progress value="0" min="0" max="100" id="p1"></progress>
+  <progress><small id="result"></small></progress>
+
 
   <script>
     const progresstag = document.getElementById('p1');
-    const result=document.getElementById('result')
+    const result=document.getElementById('result');
 
     function downloadhandler(){
         result.innerText='download'+progresstag.value+'%'
