@@ -203,24 +203,63 @@
             min-height: 100%;
             background-image: url(https://www.tooplate.com/templates/2126_antique_cafe/img/antique-cafe-bg-04.jpg);
             padding: 20px;
-        }
-        .cont{
             display: flex;
             align-items: center;
             justify-content: center;
-            gap:50px;
-            
+            gap:70px;
         }
         .lft1{
-            width: 600px;
-            height:350px;
+            width: 500px;
+            height:450px;
             background-color: rgba(255, 255, 255, 0.73);
             padding: 30px;
+            border-radius: 10px;
+            
         }
         .rgt1{
-            width: 600px;
-            height:350px;
-            background-color: blueviolet;
+            width: 450px;
+            height:450px;
+            background-color: rgba(0, 0, 0, 0.555);
+        }
+        .lft1 .main-btn{
+            border: none;
+            padding: 30px 70px;
+            margin-top: 30px;
+            background-color: rgb(4, 118, 116);
+            border-radius: 10px;
+            margin-left: 100px;
+        }
+        .lft1 .main-btn i{
+            color: #fff;
+        }
+        .lft1 p{
+            font-size: 20px;
+            padding: 0px 20px;
+        }
+        .btn-color{
+            color:orange;
+            border:none;
+            background-color: rgba(0, 0, 0, 0.36);
+            padding: 25px 40px;
+            border-radius: 10px;
+        }
+        .btn-color:hover{
+            color:#fff;
+        }
+        .rgt1 form{
+            padding: 30px;
+        }
+        form input ,textarea{
+           padding: 10px;
+           padding-right: 200px;
+           
+            border:none;
+            border-bottom: 1px solid orange;
+            background-color: rgba(0, 0, 0, 0.36);
+        }
+        form input:hover,textarea:hover{
+            border: 1px solid orange;
+            box-shadow: 0px 0px 5px orange;
         }
     </style>
 </head>
@@ -247,7 +286,7 @@
             <p class="subtitle">This is a coffee shop template named Antique Cafe which is a parallax HTML5 template with a good responsiveness. Feel free to use this layout for your cafe. If you have any question, please <a href="#">send us a message</a>.</p>
         </div>
         <div class="three">
-            <button class="main-btn"><i class="fa-solid fa-mug-saucer"> Let Explore...</i></button>
+            <button class="btn-color"><i class="fa-solid fa-mug-saucer"> Let Explore...</i></button>
         </div>
     </section>
 </section>
@@ -321,7 +360,6 @@
 </section>
 
 <section class="pic3">
-    <section>
         <div class="cont">
             <div class="lft1">
                 <h1 style="color: rgb(72, 145, 145);font-size: 2rem;line-height: 2rem;margin:20px">Contact Us</h1>
@@ -329,14 +367,26 @@
                 <p>Tel: <span style="color:darkcyan">010-020-0340</span><br><br>
                     Email: <span style="color:darkcyan">info@company.com</span></p>
             
-                <button class="main-btn"><i class="fa-solid fa-map-location">Open Maps</i></button>
+                <button class="main-btn"><i class="fa-solid fa-map-location">  Open Maps</i></button>
             </div>
             </div>
             <div class="rgt1">
+               <form>
+                <label for="Name"></label>
+                <input type="text" id="Name" placeholder="Name" required>
+                <br><br>
+                <label for="text"></label>
+                <input type="text"  id="text" placeholder="Email" required>
+                <br><br>
+                <label for="msg"></label>
+                <textarea name="msg" rows="10" cols="19" placeholder="Message"></textarea>
+                <br><br>
 
+                <button class="btn-color">Send it</button>
+               </form>
             </div>
         </div>
-    </section>
+    
 </section>
 
 </body>
